@@ -1,3 +1,8 @@
-//
-// Created by Alexis Noukan on 20/12/2024.
-//
+#include "../include/Brain.hpp"
+
+void randomChump(std::string name) {
+ 	Zombie random;
+
+    random.setName(name);
+   	random.anounce();
+}
