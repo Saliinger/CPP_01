@@ -1,7 +1,7 @@
 #ifndef ZOMBIE_HPP
 #define ZOMBIE_HPP
 
-#include "Brain.hpp"
+#include <iostream>
 
 class Zombie {
   private:
