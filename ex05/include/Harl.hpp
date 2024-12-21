@@ -1,8 +1,18 @@
-//
-// Created by Alexis Noukan on 20/12/2024.
-//
+#ifndef HARL_HPP
+#define HARL_HPP
 
-#ifndef ZOMBIE_HPP
-#define ZOMBIE_HPP
+#include <iostream>
 
-#endif //ZOMBIE_HPP
+class Harl {
+  private:
+    void debug();
+    void info();
+    void warning();
+    void error();
+  public:
+    Harl();
+    ~Harl();
+    void complain(std::string level);
+} ;
+
+#endif
