@@ -1,8 +1,8 @@
 NAME		=	Sed_is_for_losers
-CXX			= c++
-CXXFLAGS	= -Wall -Wextra -Werror -std=c++98
-SRC			= main.cpp
-OBJ			= $(SRC:.cpp=.o)
+CXX			=	c++
+CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98
+SRC			=	main.cpp
+OBJ			=	$(SRC:.cpp=.o)
 
 .phony: all re clean fclean
 
