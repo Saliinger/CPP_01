@@ -1,17 +1,20 @@
-NAME	= HI_THIS_IS_BRAIN
-CC		= c++
-CFLAGS	= -Werror -Wall -Wextra -std=c++98
+NAME		= HI_THIS_IS_BRAIN
+CXX			= c++
+CXXFLAGS	= -Werror -Wall -Wextra -std=c++98
 
-SRC		=	main.cpp
+SRC			=	main.cpp
 
-OBJ	=	$(SRC:.cpp=.o)
+OBJ			=	$(SRC:.cpp=.o)
 
-.phony:		all clean fclean re
+.phony: all re clean fclean
 
 all:		$(NAME)
 
 $(NAME):	$(OBJ)
-			$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+			$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME)
+
+%.o:		%.cpp
+			$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:
 			rm -f $(OBJ)
