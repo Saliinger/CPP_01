@@ -1,7 +1,3 @@
-//
-// Created by Alexis Noukan on 20/12/2024.
-//
-
 #ifndef WEAPON_HPP
 #define WEAPON_HPP
 
@@ -12,7 +8,10 @@ class Weapon{
     std::string type;
   public:
     Weapon();
+    Weapon(std::string type);
     ~Weapon();
+    void setType(std::string type);
+    std::string getType();
 };
 
 #endif //WEAPON_HPP
