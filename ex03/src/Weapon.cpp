@@ -1,3 +1,9 @@
-//
-// Created by Alexis Noukan on 20/12/2024.
-//
+#include "../include/Weapon.hpp"
+
+Weapon::Weapon() {
+  return;
+}
+
+Weapon::~Weapon() {
+  return;
+}
