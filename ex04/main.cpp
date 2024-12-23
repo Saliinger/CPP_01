@@ -29,18 +29,19 @@ int main(int ac, char **av) {
   const std::string filename = av[1];
   const std::string to_find = av[2];
   const std::string to_replace = av[3];
+  std::string replaceFile = filename + ".replace";
 
   /* check for empty */
   if (to_find.empty())
     return print_error("Error: The string to find cannot be empty.");
 
   /* Open files */
-  std::ifstream inputFile(filename);
+  std::ifstream inputFile(filename.c_str());
   if (!inputFile.is_open())
     return print_error("Error: Could not open input file.");
 
   /* Create to_replace file */
-  std::ofstream outputFile(filename + ".replace");
+  std::ofstream outputFile(replaceFile.c_str());
   if (!outputFile.is_open())
     return print_error("Error: Could not open output file.");
 

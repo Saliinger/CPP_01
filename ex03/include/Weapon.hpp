@@ -10,8 +10,8 @@ class Weapon{
     Weapon();
     Weapon(std::string type);
     ~Weapon();
-    void setType(std::string type);
-    std::string getType();
+    void &setType(std::string type);
+    std::string &getType() const;
 };
 
 #endif //WEAPON_HPP
