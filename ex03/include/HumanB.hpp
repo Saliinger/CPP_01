@@ -1,5 +1,5 @@
 //
-// Created by Alexis Noukan on 20/12/2024.
+// Created by Alexis Noukan on 24/12/2024.
 //
 
 #ifndef HUMANB_HPP
@@ -8,15 +8,17 @@
 #include <iostream>
 #include "Weapon.hpp"
 
-class HumanB{
+
+class HumanB
+{
 	private:
 		std::string _name;
-        Weapon *_weapon;
-    public:
-      	HumanB(std::string name);
-        ~HumanB();
-        void attack();
-        void setWeapon(Weapon weapon);
-} ;
+		Weapon *_weapon;
+	public:
+		HumanB(std::string name);
+		~HumanB();
+		void attack();
+		void setWeapon(Weapon &weapon);
+};
 
 #endif //HUMANB_HPP

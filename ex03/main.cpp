@@ -1,6 +1,10 @@
+//
+// Created by Alexis Noukan on 24/12/2024.
+//
+
+#include "include/Weapon.hpp"
 #include "include/HumanA.hpp"
 #include "include/HumanB.hpp"
-#include "include/Weapon.hpp"
 
 int main()
 {
@@ -19,4 +23,5 @@ int main()
 		club.setType("some other type of club");
 		jim.attack();
 	}
+	return 0;
 }
