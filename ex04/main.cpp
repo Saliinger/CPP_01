@@ -14,7 +14,7 @@ std::string replace_all(std::string str, const std::string to_find, const std::s
 
   while ((find_pos = str.find(to_find, pos)) != std::string::npos)
   {
-    new_str += str.substr(pos, find_pos) + to_replace;
+    new_str += str.substr(pos, find_pos - pos) + to_replace;
     pos = find_pos + to_find.length();
   }
   new_str += str.substr(pos);
